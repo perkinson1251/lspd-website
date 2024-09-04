@@ -11,12 +11,16 @@ import NavBarLink from './NavBarLink.vue'
       </RouterLink>
       <div class="flex items-center gap-5">
         <NavBarLink :to="{ name: 'about' }">О нас</NavBarLink>
-        <NavBarLink :to="{ name: 'contacts' }">Наши контакты</NavBarLink>
+        <NavBarLink tag="a" href="https://sa-es.online/lspd/viewforum.php?f=997"
+          >Ближайшая станция</NavBarLink
+        >
         <NavBarLink :to="{ name: 'faq' }">F.A.Q.</NavBarLink>
         <NavBarLink tag="a" href="https://sa-es.online/lspd"
           >Новости</NavBarLink
         >
-        <Button as="a" href="123">КАРЬЕРА</Button>
+        <RouterLink :to="{ name: 'careers' }">
+          <Button>КАРЬЕРА</Button>
+        </RouterLink>
       </div>
     </div>
   </nav>
