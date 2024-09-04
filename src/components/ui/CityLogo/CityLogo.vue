@@ -4,7 +4,7 @@ import cityPng from '@/assets/ls.webp'
 
 <template>
   <div class="flex items-center gap-1">
-    <img :src="cityPng" class="size-7 pointer-events-none" />
+    <img :src="cityPng" class="size-7 pointer-events-none" alt="ЛС" />
     <span class="text-white text-lg pointer-events-none font-oswald"
       >LOS SANTOS</span
     >

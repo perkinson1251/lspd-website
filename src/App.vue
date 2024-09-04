@@ -1,10 +1,12 @@
 <script setup lang="ts">
+import Footer from '@/components/Footer/Footer.vue'
+import Navbar from '@/components/Navbar/Navbar.vue'
 import Panel from '@/components/Panel/Panel.vue'
 </script>
 
 <template>
   <Panel />
-  <RouterLink to="/">Go to Home</RouterLink>
-  <RouterLink to="/about">Go to About</RouterLink>
+  <Navbar />
   <RouterView />
+  <Footer />
 </template>
