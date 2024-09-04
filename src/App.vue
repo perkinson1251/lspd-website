@@ -1,5 +1,8 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Panel from '@/components/Panel/Panel.vue'
+</script>
 
 <template>
-    <h1>Hello world!</h1>
+  <Panel />
+  <h1>Hello world!</h1>
 </template>
