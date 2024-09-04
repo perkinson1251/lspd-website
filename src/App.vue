@@ -4,5 +4,7 @@ import Panel from '@/components/Panel/Panel.vue'
 
 <template>
   <Panel />
-  <h1>Hello world!</h1>
+  <RouterLink to="/">Go to Home</RouterLink>
+  <RouterLink to="/about">Go to About</RouterLink>
+  <RouterView />
 </template>
