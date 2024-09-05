@@ -35,7 +35,12 @@ onBeforeUnmount(() => {
   <nav class="w-full shadow-sm sticky top-0 bg-white z-10 md:px-0 px-2">
     <div class="container mx-auto flex items-center justify-between">
       <RouterLink :to="{ name: 'home' }">
-        <img :src="LSPDLogo" width="68" class="pointer-events-none" />
+        <img
+          :src="LSPDLogo"
+          alt="Badge"
+          width="68"
+          class="pointer-events-none"
+        />
       </RouterLink>
       <button
         @click="toggleDropdown"
@@ -65,7 +70,7 @@ onBeforeUnmount(() => {
     </div>
     <div
       v-if="isDropdownOpen"
-      class="dropdown-menu lg:hidden flex flex-col items-start gap-2 bg-white border-t border-gray-200 p-4 transition-all duration-300 ease-in-out p-2"
+      class="dropdown-menu lg:hidden flex flex-col items-start gap-2 bg-white border-t border-gray-200 p-4 transition-all duration-300 ease-in-out"
     >
       <NavBarLink :to="{ name: 'about' }">О нас</NavBarLink>
       <NavBarLink tag="a" href="https://sa-es.online/lspd/viewforum.php?f=997"
