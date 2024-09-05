@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import badge from '@/assets/badge.png'
+import LSPDLogo from '@/assets/badge.png'
 import Button from '@/components/ui/Button/Button.vue'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import NavBarLink from './NavBarLink.vue'
@@ -35,7 +35,7 @@ onBeforeUnmount(() => {
   <nav class="w-full shadow-sm sticky top-0 bg-white z-10 md:px-0 px-2">
     <div class="container mx-auto flex items-center justify-between">
       <RouterLink :to="{ name: 'home' }">
-        <img :src="badge" width="68" class="pointer-events-none" />
+        <img :src="LSPDLogo" width="68" class="pointer-events-none" />
       </RouterLink>
       <button
         @click="toggleDropdown"

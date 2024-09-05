@@ -5,7 +5,7 @@ import CareersView from '@/views/CareersView.vue'
 import HomeView from '@/views/HomeView.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/lspd/site'),
   routes: [
     {
       path: '/',

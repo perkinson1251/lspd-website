@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import Card from '@/components/ui/Card/Card.vue'
-import Link from '@/components/ui/Link/Link.vue'
-
 import Image1 from '@/assets/homepage_1.png'
 import Image2 from '@/assets/homepage_2.png'
+import Card from '@/components/ui/Card/Card.vue'
+import Link from '@/components/ui/Link/Link.vue'
 </script>
 
 <template>
