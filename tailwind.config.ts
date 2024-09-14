@@ -9,6 +9,7 @@ export default {
         dark: '#0f212b',
         primary: '#0f2940',
         secondary: '#e73f15',
+        'pd-blue': '#2c2378',
       },
       fontFamily: {
         oswald: ['Oswald', 'sans-serif'],

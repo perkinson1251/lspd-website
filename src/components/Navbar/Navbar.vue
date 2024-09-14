@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import LSPDLogo from '@/assets/badge.png'
-import Button from '@/components/ui/Button/Button.vue'
+import Button from '@/components/ui/Button.vue'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
 import NavBarLink from './NavBarLink.vue'
 

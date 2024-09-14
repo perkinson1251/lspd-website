@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import CityLogo from '@/components/ui/CityLogo/CityLogo.vue'
-import Phone from '@/components/ui/Phone/Phone.vue'
+import CityLogo from '@/components/ui/CityLogo.vue'
+import Phone from '@/components/ui/Phone.vue'
 </script>
 
 <template>

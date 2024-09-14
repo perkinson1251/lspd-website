@@ -1,5 +1,29 @@
 <script lang="ts" setup>
-import Card from '@/components/ui/Card/Card.vue'
+import Image1 from '@/assets/careers/1.jpg'
+import Image2 from '@/assets/careers/2.png'
+import Image3 from '@/assets/careers/3.png'
+import CareerCard from '@/components/ui/CareerCard.vue'
+
+const cards = [
+  {
+    title: 'Карточка 1',
+    description: 'Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла',
+    link: '',
+    imageName: Image1,
+  },
+  {
+    title: 'Карточка 2',
+    description: 'Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла',
+    link: '',
+    imageName: Image2,
+  },
+  {
+    title: 'Карточка 3',
+    description: 'Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла',
+    link: '',
+    imageName: Image3,
+  },
+]
 </script>
 <template>
   <div class="w-full bg-dark md:px-0 px-2">
@@ -16,78 +40,13 @@ import Card from '@/components/ui/Card/Card.vue'
       Доступные возможности
     </h1>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-4">
-      <a
-        href="https://sa-es.online/lspd/viewforum.php?f=906"
-        class="flex flex-col"
-      >
-        <img
-          src="https://i.imgur.com/rwyGOcm.gif"
-          alt="Изображение"
-          class="w-full h-[150px] object-cover"
-        />
-        <Card class="flex-grow flex flex-col gap-4">
-          <span class="text-xl font-bold">Полицейская академия</span>
-          <p>
-            Академия полицейского департамента Лос-Сантос приглашает молодых и
-            амбициозных людей стать частью нашей команды. Каждый год мы отбираем
-            до 200 кандидатов, которые проходят интенсивное обучение и готовятся
-            к ответственной службе на защите общества. Наша программа включает
-            не только теоретические занятия и тренировки, но и практические
-            кейсы, чтобы обеспечить нашим выпускникам все необходимые навыки для
-            успешной карьеры в правоохранительных органах. Присоединяйтесь к нам
-            и станьте частью команды, которая делает Лос-Сантос безопаснее
-            каждый день.
-          </p>
-        </Card>
-      </a>
-
-      <a
-        href="https://sa-es.online/lspd/viewforum.php?f=907"
-        class="flex flex-col"
-      >
-        <img
-          src="https://i.imgur.com/r6lHWJY.gif"
-          alt="Изображение"
-          class="w-full h-[150px] object-cover"
-        />
-        <Card class="flex-grow flex flex-col gap-4">
-          <span class="text-xl font-bold">(( Восстановление на службу ))</span>
-          <p>
-            Руководство фракции предоставляет возможность, путем подачи
-            заявления на восстановление в LSPD попасть во фракцию. Программа
-            предполагает собой возвращение в неё игроков, которые ранее уже
-            имели опыт отыгрыша полиции. Данной программой может воспользоваться
-            любой желающий, который ранее играл в правоохранительных на серверах
-            с повышенным уровнем ролевой игры и может это доказать.
-          </p>
-        </Card>
-      </a>
-
-      <a
-        href="https://sa-es.online/lspd/viewforum.php?f=955"
-        class="flex flex-col"
-      >
-        <img
-          src="https://i.imgur.com/SSsInTs.gif"
-          alt="Изображение"
-          class="w-full h-[150px] object-cover"
-        />
-        <Card class="flex-grow flex flex-col gap-4">
-          <span class="text-xl font-bold">Гражданское трудоустройство</span>
-          <p>
-            Гражданское трудоустройство. департамент полиции является одним из
-            крупнейших работодателей на рынке труда города, ежегодно предлагая
-            более 700 вакансий как на правоохранительной службе, так и на
-            гражданской. Гражданские службы департамента играют ключевую роль в
-            поддержании работоспособного состояния организации, начиная от
-            юридического представительства в суде и заканчивая ведением
-            финансового учета в бухгалтерии бюджетных средств ЛСПД. Руководство
-            гражданскими службами ЛСПД осуществляется полицейскими
-            администраторами, которые подчиняются директору офиса
-            вспомогательных служб.
-          </p>
-        </Card>
-      </a>
+      <CareerCard
+        v-for="card in cards"
+        :key="card.title"
+        :title="card.title"
+        :description="card.description"
+        :imageName="card.imageName"
+      />
     </div>
   </div>
 </template>
