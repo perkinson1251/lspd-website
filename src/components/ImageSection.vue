@@ -17,6 +17,6 @@ defineProps({
 
 <style scoped>
 .image {
-  height: calc(clamp(10.313rem, 63.931vw - 0.716rem, 31.25rem));
+  height: calc(clamp(10rem, 64vw - 0.7rem, 32rem));
 }
 </style>

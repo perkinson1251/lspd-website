@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import Image1 from '@/assets/homepage_1.png'
-import Image2 from '@/assets/homepage_2.png'
+import Image from '@/assets/homepage.jpg'
+import Image1 from '@/assets/homepage_1.jpg'
+import Image2 from '@/assets/homepage_2.jpg'
 import ImageSection from '@/components/ImageSection.vue'
 import MainPageHeader from '@/components/MainPageHeader.vue'
 import Card from '@/components/ui/Card/Card.vue'
@@ -30,7 +31,7 @@ import { RouterLink } from 'vue-router'
     <Card>
       <CardItem title="Адреса">
         <span class="font-bold">Штаб-квартира полиции Лос-Сантоса</span><br />
-        100, 1-ая Уэст-стрит,<br />
+        Площадь Першинг,<br />
         Лос-Сантос, Сан-Андреас, 90012<br />
         В случае чрезвычайной ситуации звоните по телефону 911.
       </CardItem>
@@ -48,9 +49,10 @@ import { RouterLink } from 'vue-router'
   </div>
 
   <div
-    class="grid md:grid-cols-2 grid-cols-1 md:mt-[60px] mt-[20px] md:px-0 px-2"
+    class="grid md:grid-cols-3 grid-cols-1 md:mt-[60px] mt-[20px] md:px-0 px-2"
   >
-    <ImageSection :src="Image1" alt="Изображение 1" />
-    <ImageSection :src="Image2" alt="Изображение 2" />
+    <ImageSection :src="Image" alt="Изображение 1" />
+    <ImageSection :src="Image1" alt="Изображение 2" />
+    <ImageSection :src="Image2" alt="Изображение 3" />
   </div>
 </template>

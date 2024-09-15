@@ -1,27 +1,30 @@
 <script lang="ts" setup>
-import Image1 from '@/assets/careers/1.jpg'
-import Image2 from '@/assets/careers/2.png'
-import Image3 from '@/assets/careers/3.png'
+import AcademyImage from '@/assets/careers/ACADEMY.jpg'
+import BackhomeImage from '@/assets/careers/BH.jpg'
+import CivilImage from '@/assets/careers/CIVIL.jpg'
 import CareerCard from '@/components/ui/CareerCard.vue'
 
 const cards = [
   {
-    title: 'Карточка 1',
-    description: 'Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла',
-    link: '',
-    imageName: Image1,
+    title: 'Полицейская академия',
+    description:
+      'Академия полицейского департамента Лос-Сантоса приглашает амбициозных людей пройти обучение и подготовку для службы на защите общества. Мы предлагаем теоретические и практические занятия, чтобы выпускники получили все необходимые навыки для успешной карьеры в правоохранительных органах.',
+    link: 'https://sa-es.online/lspd/viewforum.php?f=906',
+    imageName: AcademyImage,
   },
   {
-    title: 'Карточка 2',
-    description: 'Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла',
-    link: '',
-    imageName: Image2,
+    title: '(( Восстановление на службу ))',
+    description:
+      'Руководство фракции предоставляет возможность вернуться в LSPD для игроков с предыдущим опытом службы в полиции на ролевых серверах. Программа доступна тем, кто может подтвердить свой опыт в правоохранительных органах.',
+    link: 'https://sa-es.online/lspd/viewforum.php?f=907',
+    imageName: BackhomeImage,
   },
   {
-    title: 'Карточка 3',
-    description: 'Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла-Бла-бла-бла',
-    link: '',
-    imageName: Image3,
+    title: 'Гражданская служба',
+    description:
+      'Департамент полиции Лос-Сантоса ежегодно предлагает более 700 вакансий, включая правоохранительную и гражданскую службы. Гражданские службы поддерживают работу департамента в сферах, таких как юриспруденция и бухгалтерия, под управлением полицейских администраторов.',
+    link: 'https://sa-es.online/lspd/viewforum.php?f=955',
+    imageName: CivilImage,
   },
 ]
 </script>
@@ -36,9 +39,7 @@ const cards = [
     </div>
   </div>
   <div class="container mx-auto md:px-0 px-2">
-    <h1 class="text-3xl font-bold text-center py-[40px]">
-      Доступные возможности
-    </h1>
+    <h1 class="text-3xl font-bold text-center py-[40px]">Доступные вакансии</h1>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 gap-y-4">
       <CareerCard
         v-for="card in cards"
@@ -46,6 +47,7 @@ const cards = [
         :title="card.title"
         :description="card.description"
         :imageName="card.imageName"
+        :link="card.link"
       />
     </div>
   </div>
