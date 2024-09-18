@@ -5,7 +5,7 @@ import { defineConfig } from 'vite'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base: '/lspd/site/',
+  base: '/sites/lspd',
   resolve: {
     alias: [
       {

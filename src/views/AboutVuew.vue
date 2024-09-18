@@ -5,7 +5,7 @@ import TextBlock from '@/components/ui/TextBlock.vue'
 
 <template>
   <div class="container mx-auto flex flex-col gap-4 px-2 md:px-0">
-    <h1 class="text-4xl font-bold text-center mt-2">Про нас</h1>
+    <h1 class="text-4xl font-bold text-center mt-2">О нас</h1>
 
     <div>
       <SectionTitle>Наша миссия</SectionTitle>
