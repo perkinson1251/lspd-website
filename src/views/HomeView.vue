@@ -2,11 +2,10 @@
 import Image from '@/assets/homepage.jpg'
 import Image1 from '@/assets/homepage_1.jpg'
 import Image2 from '@/assets/homepage_2.jpg'
-import ImageSection from '@/components/ImageSection.vue'
-import MainPageHeader from '@/components/MainPageHeader.vue'
-import Card from '@/components/ui/Card/Card.vue'
-import CardItem from '@/components/ui/Card/CardItem.vue'
-import Link from '@/components/ui/Link.vue'
+import ImageSection from '@/components/ImageSection'
+import MainPageHeader from '@/components/MainPageHeader'
+import Card, { CardItem } from '@/components/ui/Card'
+import Link from '@/components/ui/Link'
 import { RouterLink } from 'vue-router'
 </script>
 

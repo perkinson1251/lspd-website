@@ -1,8 +1,7 @@
 <script setup lang="ts">
-defineProps({
-  src: String,
-  alt: String,
-})
+import { ImageSectionProps } from '.'
+
+defineProps<ImageSectionProps>()
 </script>
 
 <template>

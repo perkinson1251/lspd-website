@@ -1,8 +1,8 @@
 <script lang="ts" setup>
 import LSPDLogo from '@/assets/badge.png'
-import Button from '@/components/ui/Button.vue'
+import Button from '@/components/ui/Button'
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import NavBarLink from './NavBarLink.vue'
+import NavBarLink from './NavbarLink.vue'
 
 const isDropdownOpen = ref(false)
 
@@ -44,7 +44,7 @@ onBeforeUnmount(() => {
       </RouterLink>
       <button
         @click="toggleDropdown"
-        class="lg:hidden flex items-center justify-center size-10 bg-light rounded text-gray-500 hover:text-gray-700"
+        class="lg:hidden flex items-center justify-center size-10 bg-lightBlue rounded text-gray-500 hover:text-gray-700"
       >
         <svg
           class="fill-current h-3 w-3"

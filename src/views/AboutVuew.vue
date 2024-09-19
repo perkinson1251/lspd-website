@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import SectionTitle from '@/components/ui/SectionTitle.vue'
-import TextBlock from '@/components/ui/TextBlock.vue'
+import SectionTitle from '@/components/ui/SectionTitle'
+import TextBlock from '@/components/ui/TextBlock'
 </script>
 
 <template>

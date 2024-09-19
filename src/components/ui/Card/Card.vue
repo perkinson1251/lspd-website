@@ -1,3 +1,3 @@
 <template>
-  <div class="card bg-light p-[30px]"><slot /></div>
+  <div class="card bg-lightBlue p-[30px]"><slot /></div>
 </template>

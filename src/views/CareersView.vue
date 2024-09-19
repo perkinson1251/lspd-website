@@ -2,7 +2,7 @@
 import AcademyImage from '@/assets/careers/ACADEMY.jpg'
 import BackhomeImage from '@/assets/careers/BH.jpg'
 import CivilImage from '@/assets/careers/CIVIL.jpg'
-import CareerCard from '@/components/ui/CareerCard.vue'
+import CareerCard from '@/components/ui/CareerCard'
 
 const cards = [
   {
@@ -29,7 +29,7 @@ const cards = [
 ]
 </script>
 <template>
-  <div class="w-full bg-dark md:px-0 px-2">
+  <div class="w-full bg-darkBlue md:px-0 px-2">
     <div class="container mx-auto text-white flex flex-col gap-4 py-6">
       <h2 class="text-lg font-medium">
         Стать офицером полиции, Программа повышения квалификации кандидатов

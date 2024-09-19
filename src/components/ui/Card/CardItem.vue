@@ -1,12 +1,12 @@
 <script setup lang="ts">
-defineProps({
-  title: String,
-})
+import { CardItemProps } from '.'
+
+defineProps<CardItemProps>()
 </script>
 
 <template>
-  <Card class="flex flex-col gap-2">
+  <div class="flex flex-col gap-2">
     <span class="text-xl font-bold">{{ title }}</span>
     <slot></slot>
-  </Card>
+  </div>
 </template>

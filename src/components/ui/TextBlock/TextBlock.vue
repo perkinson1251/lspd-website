@@ -1,5 +1,5 @@
 <template>
-  <p class="bg-light p-2">
+  <p class="bg-lightBlue p-2">
     <slot />
   </p>
 </template>

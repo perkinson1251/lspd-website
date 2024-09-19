@@ -1,8 +1,7 @@
 <script setup lang="ts">
-defineProps({
-  title: String,
-  subtitle: String,
-})
+import { MainPageHeaderProps } from '.'
+
+defineProps<MainPageHeaderProps>()
 </script>
 <template>
   <header

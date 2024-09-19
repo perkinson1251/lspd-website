@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "class-variance-authority": "^0.7.0",
+    "tailwind-merge": "^2.5.2",
     "vue": "^3.4.37",
     "vue-router": "^4.4.3"
   },
